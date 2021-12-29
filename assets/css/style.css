@@ -109,7 +109,7 @@ section {
 
 .hero .hire {
     font-weight: lighter;
-    text-align: left;
+    text-align: end;
     color: var(--text-color);
     margin: 3.5%;
     width: 45%;
@@ -129,4 +129,23 @@ section {
 
 .hero .hire p {
     max-width: 500px;
+}
+
+/* hero styles end*/
+
+/* about me styles start*/
+
+#about-me {
+    background-color: var(--sec-color);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#about-me .me {
+    max-width: 500px;
+    background-color: black;
+    padding: 0;
+    height: 200px;
 }
