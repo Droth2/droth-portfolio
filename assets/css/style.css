@@ -136,16 +136,33 @@ section {
 /* about me styles start*/
 
 #about-me {
-    background-color: var(--sec-color);
+    background-color: black;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 60px;
+}
+
+#about-me .about {
+    border-right: 3px solid gray;
+    padding: 100px;
+    font-size: 30px;
 }
 
 #about-me .me {
     max-width: 500px;
+    padding: 20px;
+}
+
+/* about me styles end */
+
+/* work styles start*/
+
+#work {
     background-color: black;
-    padding: 0;
-    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
