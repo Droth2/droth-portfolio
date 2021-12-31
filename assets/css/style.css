@@ -55,17 +55,17 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 15px;
+    transition: transform 200ms ease-in-out;
 }
 
 header nav ul li a:hover {
     color: var(--text-color);
-    font-size: 20px;
-    padding: 10px 30px;
+    transform: translateY(-10px);
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 footer {
-    background-color: var(--sec-color);
+    background-color: black;
     width: 100%;
     padding: 50px 35px;
 }
@@ -146,8 +146,11 @@ section {
 
 #about-me .about {
     border-right: 3px solid gray;
-    padding: 100px;
+    padding: 50px 80px 50px 8px;
     font-size: 30px;
+    width: 15%;
+    text-align: right;
+    margin-left: -146px;
 }
 
 #about-me .me {
@@ -162,27 +165,28 @@ section {
 #work {
     background-color: black;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .heading {
-    border-bottom: 3px solid gray;
-    padding: 100px 126px 100px 100px;
+    border-right: 3px solid gray;
+    padding: 100px 33px 100px 168px;
     font-size: 30px;
+    width: 30%;
 }
 
 .cards {
     padding: 3rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    max-width: 450px;
+    min-height: 300px;
+    max-width: 380px;
     overflow: hidden;
     background: white;
     color: black;
@@ -191,14 +195,27 @@ section {
     text-decoration: none;
     font-size: 16px;
     margin: 30px;
+    transition: transform 200ms ease-in-out;
 }
 
-.card-image {
-    flex: 0 0 120px;
-    background-image: url(/assets/images/hero-bg.jpeg);
+.card:hover {
+    transform: translatey(-16px);
+    box-shadow: 3px 2px 14px rgba(255, 255, 255, 1);
+}
+
+.run {
+    background-image: url("../images/hero-bg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    max-width: 800px;
+}
+
+.tbd {
+    background-image: url("../images/index.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card-content {
@@ -221,4 +238,13 @@ section {
 .card-readmore {
     text-transform: uppercase;
     font-weight: 700;
+    margin-top: auto;
+}
+
+/* end styles for work section */
+
+/* start styles for contact section */
+
+#contact-me {
+    background-color: black;
 }
