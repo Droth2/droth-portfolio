@@ -295,3 +295,109 @@ section {
     font-size: 16px;
     color: var(--text-color);
 }
+
+/* end styles for contact section*/
+
+/*media query for smaller desktop screens */
+@media screen and (max-width: 1200px) {
+    .hero .darth img {
+        width: 75%;
+        height: 85%;
+    }
+    
+    #about-me {
+        flex-direction: column;
+    }
+
+    #about-me .about {
+        border-bottom: 3px solid grey;
+        border-right: none;
+        max-height: 160px;
+    }
+
+    #about-me .me {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #work {
+        padding-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        padding: 50px 100px;
+        border-bottom: 3px solid grey;
+        border-right: none;
+        width: 312px;
+    }
+
+    .card {
+        max-width: 392px;
+    }
+}
+
+@media screen and (max-width: 1129px) {
+    .card {
+        max-width: 248px;
+        min-height: 271px;
+    }
+}
+
+@media screen and (max-width: 831px) {
+    .hero .darth {
+        margin: 30px;
+        max-width: 223px;
+    }
+
+    .hero .darth img {
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero .hire h2 {
+        text-align: center;
+    }
+
+    .hero .hire p {
+        text-align: center;
+    }
+
+    .card {
+        max-width: 385px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin-bottom: 30px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .cards {
+        padding: 3rem 0;
+    }
+    .card {
+        max-width: 380px;
+    }
+
+    .footer-list ul {
+        flex-direction: column;
+        text-align: center;
+        width:44%
+    }
+
+    .footer-list ul li {
+        margin: 5px 0;
+    }
+}
