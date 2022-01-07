@@ -284,7 +284,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 39%;
+    width: 70%;
     list-style: none;
     margin-top: 10px;
 }
@@ -299,6 +299,17 @@ section {
 /* end styles for contact section*/
 
 /*media query for smaller desktop screens */
+@media screen and (min-width: 1400px) {
+    .footer-list ul {
+        width: 38%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .tbd {
+        max-width: 281px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .hero .darth img {
         width: 75%;
@@ -333,13 +344,13 @@ section {
         width: 312px;
     }
 
-    .card {
+    .tbd {
         max-width: 392px;
     }
 }
 
 @media screen and (max-width: 1129px) {
-    .card {
+    .tbd {
         max-width: 248px;
         min-height: 271px;
     }
@@ -399,5 +410,28 @@ section {
 
     .footer-list ul li {
         margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #about-me .about {
+        padding-bottom: 33px;
+        padding-top: 13px;
+    }
+
+    #about-me .about h2{
+        text-align: center;
     }
 }
