@@ -218,6 +218,13 @@ section {
     max-width: 800px;
 }
 
+.hobby-search {
+    background-image: url("../images/hobby-search.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .tbd {
     background-image: url("../images/index.png");
     background-size: cover;
