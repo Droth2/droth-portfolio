@@ -225,6 +225,13 @@ section {
     background-position: center;
 }
 
+.handy-helper {
+    background-image: url("../images/home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .tbd {
     background-image: url("../images/index.png");
     background-size: cover;
